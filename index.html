@@ -45,11 +45,18 @@
             background-color: #000;
         }
 
-        .logo-area h1 { font-size: 3.5rem; text-transform: uppercase; letter-spacing: 5px; margin: 0; font-weight: 900; }
+        .logo-area h1 { 
+            font-size: 3.5rem; 
+            text-transform: uppercase; 
+            letter-spacing: 5px; 
+            margin: 0; 
+            font-weight: 900;
+        }
         .logo-area span { color: var(--fury-red); }
 
         .container { max-width: 1200px; margin: auto; padding: 4rem 2rem; }
         
+        /* Premium Tier Section */
         .premium-section {
             background: rgba(220, 20, 60, 0.05);
             padding: 3rem;
@@ -80,9 +87,10 @@
             border: 1px solid #222;
         }
 
+        /* Standard Categories */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
 
@@ -96,6 +104,15 @@
 
         .card:hover { border-top-color: var(--fury-red); transform: translateY(-5px); }
         .card h3 { color: var(--fury-red); margin-top: 0; text-transform: uppercase; }
+
+        /* Business Section */
+        .business-model {
+            background: rgba(75, 0, 130, 0.1);
+            padding: 3rem;
+            border-radius: 15px;
+            margin: 4rem 0;
+            border: 1px solid #333;
+        }
 
         .cta-box {
             background: linear-gradient(45deg, var(--fury-purple), #1a0033);
@@ -116,8 +133,8 @@
             margin: 10px;
             transition: 0.3s;
             text-transform: uppercase;
-            cursor: pointer;
             border: none;
+            cursor: pointer;
         }
 
         .btn:hover { background: #ff1e4d; box-shadow: 0 0 20px rgba(255, 30, 77, 0.4); }
@@ -134,45 +151,72 @@
         <p>Elite Game Development Outsourcing & Talent Management</p>
     </div>
     <div style="margin-top: 20px;">
-        <a href="mailto:enforcedfury@gmail.com?subject=Talent Submission" class="btn">Join the Network</a>
+        <a href="mailto:enforcedfury@gmail.com?subject=Partner Application" class="btn">Join the Network</a>
     </div>
 </header>
 
 <div class="container">
     <div class="premium-section">
         <h2 style="margin-top:0; text-transform: uppercase;">Enforced Elite <span style="color:var(--fury-red);">Featured Partners</span></h2>
-        <p>Year 2 Premium Placement Slots. Priority visibility for elite specialists.</p>
+        <p>Phase 2 Premium Placement. High-visibility slots for verified specialists.</p>
         <div class="premium-grid">
-            <div class="premium-card">Slot 01: Coming Soon</div>
-            <div class="premium-card">Slot 02: Coming Soon</div>
-            <div class="premium-card">Slot 03: Coming Soon</div>
+            <div class="premium-card">Elite Slot 01: Coming Soon</div>
+            <div class="premium-card">Elite Slot 02: Coming Soon</div>
+            <div class="premium-card">Elite Slot 03: Coming Soon</div>
         </div>
     </div>
 
-    <h2 style="text-align:center; font-size: 2rem; margin-bottom: 3rem; text-transform: uppercase;">Outsourcing Departments</h2>
+    <h2 style="text-align:center; font-size: 2rem; margin-bottom: 3rem; text-transform: uppercase;">Our <span style="color:var(--fury-red);">Specializations</span></h2>
     <div class="grid">
         <div class="card">
             <h3>Programmers</h3>
-            <p>Engine architecture and multiplayer systems. Specialists in C++, C#, and Python.</p>
+            <p>Full-stack engine experts specializing in C++, C#, and multiplayer scalability.</p>
         </div>
         <div class="card">
             <h3>Technical Scripters</h3>
             <p>Advanced AI behaviors, logic implementation, and core gameplay mechanics.</p>
         </div>
         <div class="card">
-            <h3>Game Designers</h3>
-            <p>Narrative flow, level architecture, and project economy management.</p>
+            <h3>Pixel Art & 2D</h3>
+            <p>Bespoke character sprites, environment tilesets, and game-ready UI assets.</p>
+        </div>
+        <div class="card">
+            <h3>NFT & Web3</h3>
+            <p>Layered asset generation for digital collections and secure blockchain integration.</p>
+        </div>
+        <div class="card">
+            <h3>Game Design</h3>
+            <p>Project documentation, narrative flow, and economy balancing.</p>
         </div>
         <div class="card">
             <h3>Web & Ecosystem</h3>
-            <p>Custom player dashboards, project landing pages, and secure digital marketplaces.</p>
+            <p>Custom player dashboards, project landing pages, and secure marketplaces.</p>
+        </div>
+    </div>
+
+    <div class="business-model">
+        <h2 style="text-transform: uppercase; text-align: center;">Secure <span style="color:var(--fury-red);">Project Escrow</span></h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">We act as the financial intermediary to protect both clients and creators. Funds are held securely and released only upon milestone approval.</p>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;">
+            <div style="padding: 10px;">
+                <h4 style="color: var(--fury-red); margin-bottom: 5px;">FLAT 10% FEE</h4>
+                <p style="font-size: 0.9rem;">Simple, transparent management.</p>
+            </div>
+            <div style="padding: 10px;">
+                <h4 style="color: var(--fury-red); margin-bottom: 5px;">BANK SECURE</h4>
+                <p style="font-size: 0.9rem;">Direct transfers & card payments.</p>
+            </div>
+            <div style="padding: 10px;">
+                <h4 style="color: var(--fury-red); margin-bottom: 5px;">VETTED TALENT</h4>
+                <p style="font-size: 0.9rem;">Quality control at every step.</p>
+            </div>
         </div>
     </div>
 
     <div id="apply" class="cta-box">
         <h2>Ready to Deploy?</h2>
-        <p>Whether you are looking for elite talent or want to join the network, our management handles the logistics.<br> 
-        Standard 10% management fee applies to all secure contracts.</p>
+        <p>Whether you are looking for elite talent or want to join our vetted network.<br> 
+        One inbox for all inquiries, managed by the Enforced Fury team.</p>
         <a href="mailto:enforcedfury@gmail.com?subject=Client Inquiry" class="btn">Inquire for Talent</a>
         <a href="mailto:enforcedfury@gmail.com?subject=Partner Application" class="btn" style="background:transparent; border: 2px solid white;">Apply as Partner</a>
     </div>
@@ -180,7 +224,7 @@
 
 <footer>
     <p>&copy; 2025 ENFORCED FURY GAME STUDIOS. ALL RIGHTS RESERVED.</p>
-    <p>SECURE STRIPE PAYMENTS ENABLED</p>
+    <p>SECURE STRIPE PAYMENTS ENABLED | ENFORCEDFURY@GMAIL.COM</p>
 </footer>
 
 <script>
