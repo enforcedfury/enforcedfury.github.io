@@ -21,11 +21,10 @@
             scroll-behavior: smooth;
         }
 
-        /* Hero Section */
         header {
-            height: 80vh;
-            background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(75, 0, 130, 0.4)), 
-                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1500');
+            height: 70vh;
+            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(75, 0, 130, 0.5)), 
+                        url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1500');
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -35,19 +34,41 @@
             border-bottom: 5px solid var(--fury-red);
         }
 
-        .logo-area h1 {
-            font-size: 4rem;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            text-shadow: 0 0 20px var(--fury-red);
-        }
-
+        .logo-area h1 { font-size: 3.5rem; text-transform: uppercase; letter-spacing: 5px; margin: 0; }
         .logo-area span { color: var(--fury-red); }
 
-        /* Department Grid */
         .container { max-width: 1200px; margin: auto; padding: 4rem 2rem; }
         
+        /* Premium Slots Section */
+        .premium-section {
+            background: rgba(220, 20, 60, 0.1);
+            padding: 2rem;
+            border: 1px dashed var(--fury-red);
+            border-radius: 15px;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .premium-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .premium-card {
+            background: #222;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            color: #555;
+            font-weight: bold;
+            border: 1px solid #333;
+        }
+
+        /* Standard Grid */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -59,18 +80,10 @@
             padding: 2rem;
             border-radius: 10px;
             border-left: 4px solid var(--fury-purple);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            border-left: 4px solid var(--fury-red);
-            transform: scale(1.03);
-            box-shadow: 0 0 15px rgba(220, 20, 60, 0.3);
         }
 
         .card h3 { color: var(--fury-red); margin-top: 0; }
 
-        /* Pricing/Partner Section */
         .cta-box {
             background: linear-gradient(45deg, var(--fury-purple), #1a0033);
             padding: 3rem;
@@ -88,16 +101,12 @@
             border-radius: 5px;
             display: inline-block;
             margin: 10px;
+            transition: 0.3s;
         }
 
-        .fee-badge {
-            display: inline-block;
-            background: rgba(0,0,0,0.4);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-        }
+        .btn:hover { background: #ff1e4d; transform: translateY(-2px); }
+
+        footer { text-align:center; padding: 4rem 2rem; opacity: 0.6; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -105,43 +114,53 @@
 <header>
     <div class="logo-area">
         <h1>Enforced <span>Fury</span></h1>
-        <p>Elite Game Development & Talent Management</p>
+        <p>Elite Game Development Outsourcing & Talent Management</p>
     </div>
     <a href="#apply" class="btn">Partner Recruitment Open</a>
 </header>
 
 <div class="container">
-    <h2 style="text-align:center; font-size: 2.5rem;">The Core Departments</h2>
+    <div class="premium-section">
+        <h2 style="margin-top:0;">Enforced Elite <span style="color:var(--fury-red);">Featured Partners</span></h2>
+        <p>Top-tier studios and individual specialists. Year 2 Premium Slots.</p>
+        <div class="premium-grid">
+            <div class="premium-card">ELITE SLOT 1: COMING SOON</div>
+            <div class="premium-card">ELITE SLOT 2: COMING SOON</div>
+            <div class="premium-card">ELITE SLOT 3: COMING SOON</div>
+        </div>
+    </div>
+
+    <h2 style="text-align:center; font-size: 2.2rem; margin-bottom: 2rem;">Outsourcing Departments</h2>
     <div class="grid">
         <div class="card">
-            <h3>Programming</h3>
-            <p>Engine-level development in C++, C#, and Python. Scalable solutions for modern gaming.</p>
+            <h3>Programmers</h3>
+            <p>Full-stack engine experts specializing in C++, C#, and multiplayer scalability.</p>
         </div>
         <div class="card">
-            <h3>Scripting</h3>
-            <p>Gameplay logic, AI behaviors, and technical mechanics. Bringing interactivity to life.</p>
+            <h3>Technical Scripters</h3>
+            <p>Logic implementation, AI systems, and complex gameplay mechanics.</p>
         </div>
         <div class="card">
-            <h3>Game Design</h3>
-            <p>World building, narrative structure, and economy balancing. Designing the player journey.</p>
+            <h3>Game Designers</h3>
+            <p>Level architecture, narrative flow, and game economy management.</p>
         </div>
         <div class="card">
-            <h3>Web Design</h3>
-            <p>High-fidelity landing pages, UI kits, and marketplace integration for game ecosystems.</p>
+            <h3>Web & Ecosystem</h3>
+            <p>Gaming landing pages, player dashboards, and integrated marketplaces.</p>
         </div>
     </div>
 
     <div id="apply" class="cta-box">
-        <div class="fee-badge">Year 1: 0% Listing Fee</div>
-        <h2>Join the Fury Network</h2>
-        <p>We handle the clients and management. You focus on the craft. <br> 
-        Standard Management Fee: 10% - 20% per contract.</p>
-        <a href="mailto:recruitment@enforcedfury.com" class="btn">Submit Portfolio</a>
+        <h2>Scale Your Vision</h2>
+        <p>Connect with vetted developers. Standard management fee of 10-20% applies to all projects to ensure quality and escrow protection.</p>
+        <a href="mailto:enforcedfury@gmail.com" class="btn">Client Inquiry</a>
+        <a href="mailto:enforcedfury@gmail.com" class="btn" style="background:transparent; border: 2px solid white;">Apply as Talent</a>
     </div>
 </div>
 
-<footer style="text-align:center; padding: 2rem; opacity: 0.5;">
-    &copy; 2025 Enforced Fury Game Studios. All Rates Calculated at $1.80/GB Standard.
+<footer>
+    <p>&copy; 2025 Enforced Fury Game Studios. All Rights Reserved.</p>
+    <p>Premium Placement Phase 2: Launching 2026</p>
 </footer>
 
 </body>
