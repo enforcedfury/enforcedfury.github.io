@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enforced Fury Game Studios | Elite Outsourcing</title>
+    <script src="https://js.stripe.com/v3/"></script>
     <style>
         :root {
             --fury-purple: #4B0082;
@@ -101,4 +102,91 @@
             padding: 4rem 2rem;
             border-radius: 15px;
             text-align: center;
-            margin-
+            margin-top: 4rem;
+        }
+
+        .btn {
+            background: var(--fury-red);
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover { background: #ff1e4d; box-shadow: 0 0 20px rgba(255, 30, 77, 0.4); }
+
+        footer { text-align:center; padding: 5rem 2rem; opacity: 0.5; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://files.catbox.moe/o6sh9o.png" alt="Enforced Fury Logo" class="studio-logo">
+    <div class="logo-area">
+        <h1>Enforced <span>Fury</span></h1>
+        <p>Elite Game Development Outsourcing & Talent Management</p>
+    </div>
+    <div style="margin-top: 20px;">
+        <a href="mailto:enforcedfury@gmail.com?subject=Talent Submission" class="btn">Join the Network</a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="premium-section">
+        <h2 style="margin-top:0; text-transform: uppercase;">Enforced Elite <span style="color:var(--fury-red);">Featured Partners</span></h2>
+        <p>Year 2 Premium Placement Slots. Priority visibility for elite specialists.</p>
+        <div class="premium-grid">
+            <div class="premium-card">Slot 01: Coming Soon</div>
+            <div class="premium-card">Slot 02: Coming Soon</div>
+            <div class="premium-card">Slot 03: Coming Soon</div>
+        </div>
+    </div>
+
+    <h2 style="text-align:center; font-size: 2rem; margin-bottom: 3rem; text-transform: uppercase;">Outsourcing Departments</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Programmers</h3>
+            <p>Engine architecture and multiplayer systems. Specialists in C++, C#, and Python.</p>
+        </div>
+        <div class="card">
+            <h3>Technical Scripters</h3>
+            <p>Advanced AI behaviors, logic implementation, and core gameplay mechanics.</p>
+        </div>
+        <div class="card">
+            <h3>Game Designers</h3>
+            <p>Narrative flow, level architecture, and project economy management.</p>
+        </div>
+        <div class="card">
+            <h3>Web & Ecosystem</h3>
+            <p>Custom player dashboards, project landing pages, and secure digital marketplaces.</p>
+        </div>
+    </div>
+
+    <div id="apply" class="cta-box">
+        <h2>Ready to Deploy?</h2>
+        <p>Whether you are looking for elite talent or want to join the network, our management handles the logistics.<br> 
+        Standard 10% management fee applies to all secure contracts.</p>
+        <a href="mailto:enforcedfury@gmail.com?subject=Client Inquiry" class="btn">Inquire for Talent</a>
+        <a href="mailto:enforcedfury@gmail.com?subject=Partner Application" class="btn" style="background:transparent; border: 2px solid white;">Apply as Partner</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 ENFORCED FURY GAME STUDIOS. ALL RIGHTS RESERVED.</p>
+    <p>SECURE STRIPE PAYMENTS ENABLED</p>
+</footer>
+
+<script>
+    // Initializing Stripe with your Live Key
+    const stripe = Stripe('pk_live_51Sj6tl05S46hSKZGHDH1eotRF1gD843HRqRhG4H1onsCSfRrHgUj6nrpiHje9y0OhhDOmudU27LYV1mg2GmEU0qH0046zjwrmo');
+</script>
+
+</body>
+</html>
