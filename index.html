@@ -21,9 +21,10 @@
             scroll-behavior: smooth;
         }
 
+        /* Hero Section with Logo */
         header {
-            height: 70vh;
-            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(75, 0, 130, 0.5)), 
+            height: 85vh;
+            background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(75, 0, 130, 0.6)), 
                         url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1500');
             background-size: cover;
             display: flex;
@@ -34,15 +35,31 @@
             border-bottom: 5px solid var(--fury-red);
         }
 
-        .logo-area h1 { font-size: 3.5rem; text-transform: uppercase; letter-spacing: 5px; margin: 0; }
+        .studio-logo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid var(--fury-red);
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px rgba(220, 20, 60, 0.5);
+            background-color: #000;
+        }
+
+        .logo-area h1 { 
+            font-size: 3.5rem; 
+            text-transform: uppercase; 
+            letter-spacing: 5px; 
+            margin: 0; 
+            font-weight: 900;
+        }
         .logo-area span { color: var(--fury-red); }
 
         .container { max-width: 1200px; margin: auto; padding: 4rem 2rem; }
         
         /* Premium Slots Section */
         .premium-section {
-            background: rgba(220, 20, 60, 0.1);
-            padding: 2rem;
+            background: rgba(220, 20, 60, 0.05);
+            padding: 3rem;
             border: 1px dashed var(--fury-red);
             border-radius: 15px;
             margin-bottom: 4rem;
@@ -53,20 +70,25 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         .premium-card {
-            background: #222;
+            background: #111;
             height: 150px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-            color: #555;
-            font-weight: bold;
-            border: 1px solid #333;
+            color: #444;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: 1px solid #222;
+            transition: 0.3s;
         }
+        
+        .premium-card:hover { color: var(--fury-red); border-color: var(--fury-red); }
 
         /* Standard Grid */
         .grid {
@@ -77,91 +99,10 @@
 
         .card {
             background: var(--card-bg);
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 10px;
-            border-left: 4px solid var(--fury-purple);
-        }
-
-        .card h3 { color: var(--fury-red); margin-top: 0; }
-
-        .cta-box {
-            background: linear-gradient(45deg, var(--fury-purple), #1a0033);
-            padding: 3rem;
-            border-radius: 15px;
-            text-align: center;
-            margin-top: 4rem;
-        }
-
-        .btn {
-            background: var(--fury-red);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px;
+            border-top: 3px solid var(--fury-purple);
             transition: 0.3s;
         }
 
-        .btn:hover { background: #ff1e4d; transform: translateY(-2px); }
-
-        footer { text-align:center; padding: 4rem 2rem; opacity: 0.6; font-size: 0.9rem; }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="logo-area">
-        <h1>Enforced <span>Fury</span></h1>
-        <p>Elite Game Development Outsourcing & Talent Management</p>
-    </div>
-    <a href="#apply" class="btn">Partner Recruitment Open</a>
-</header>
-
-<div class="container">
-    <div class="premium-section">
-        <h2 style="margin-top:0;">Enforced Elite <span style="color:var(--fury-red);">Featured Partners</span></h2>
-        <p>Top-tier studios and individual specialists. Year 2 Premium Slots.</p>
-        <div class="premium-grid">
-            <div class="premium-card">ELITE SLOT 1: COMING SOON</div>
-            <div class="premium-card">ELITE SLOT 2: COMING SOON</div>
-            <div class="premium-card">ELITE SLOT 3: COMING SOON</div>
-        </div>
-    </div>
-
-    <h2 style="text-align:center; font-size: 2.2rem; margin-bottom: 2rem;">Outsourcing Departments</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Programmers</h3>
-            <p>Full-stack engine experts specializing in C++, C#, and multiplayer scalability.</p>
-        </div>
-        <div class="card">
-            <h3>Technical Scripters</h3>
-            <p>Logic implementation, AI systems, and complex gameplay mechanics.</p>
-        </div>
-        <div class="card">
-            <h3>Game Designers</h3>
-            <p>Level architecture, narrative flow, and game economy management.</p>
-        </div>
-        <div class="card">
-            <h3>Web & Ecosystem</h3>
-            <p>Gaming landing pages, player dashboards, and integrated marketplaces.</p>
-        </div>
-    </div>
-
-    <div id="apply" class="cta-box">
-        <h2>Scale Your Vision</h2>
-        <p>Connect with vetted developers. Standard management fee of 10-20% applies to all projects to ensure quality and escrow protection.</p>
-        <a href="mailto:enforcedfury@gmail.com" class="btn">Client Inquiry</a>
-        <a href="mailto:enforcedfury@gmail.com" class="btn" style="background:transparent; border: 2px solid white;">Apply as Talent</a>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2025 Enforced Fury Game Studios. All Rights Reserved.</p>
-    <p>Premium Placement Phase 2: Launching 2026</p>
-</footer>
-
-</body>
-</html>
+        .card:hover { border-top-color:
