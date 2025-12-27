@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enforced Fury Game Studios | Elite Outsourcing</title>
+    <style>
+        :root {
+            --fury-purple: #4B0082;
+            --fury-red: #DC143C;
+            --dark-bg: #0a0a0a;
+            --card-bg: #161616;
+            --text-white: #f0f0f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-white);
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(75, 0, 130, 0.4)), 
+                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1500');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 5px solid var(--fury-red);
+        }
+
+        .logo-area h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px var(--fury-red);
+        }
+
+        .logo-area span { color: var(--fury-red); }
+
+        /* Department Grid */
+        .container { max-width: 1200px; margin: auto; padding: 4rem 2rem; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--fury-purple);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-left: 4px solid var(--fury-red);
+            transform: scale(1.03);
+            box-shadow: 0 0 15px rgba(220, 20, 60, 0.3);
+        }
+
+        .card h3 { color: var(--fury-red); margin-top: 0; }
+
+        /* Pricing/Partner Section */
+        .cta-box {
+            background: linear-gradient(45deg, var(--fury-purple), #1a0033);
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .btn {
+            background: var(--fury-red);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .fee-badge {
+            display: inline-block;
+            background: rgba(0,0,0,0.4);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-area">
+        <h1>Enforced <span>Fury</span></h1>
+        <p>Elite Game Development & Talent Management</p>
+    </div>
+    <a href="#apply" class="btn">Partner Recruitment Open</a>
+</header>
+
+<div class="container">
+    <h2 style="text-align:center; font-size: 2.5rem;">The Core Departments</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Engine-level development in C++, C#, and Python. Scalable solutions for modern gaming.</p>
+        </div>
+        <div class="card">
+            <h3>Scripting</h3>
+            <p>Gameplay logic, AI behaviors, and technical mechanics. Bringing interactivity to life.</p>
+        </div>
+        <div class="card">
+            <h3>Game Design</h3>
+            <p>World building, narrative structure, and economy balancing. Designing the player journey.</p>
+        </div>
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>High-fidelity landing pages, UI kits, and marketplace integration for game ecosystems.</p>
+        </div>
+    </div>
+
+    <div id="apply" class="cta-box">
+        <div class="fee-badge">Year 1: 0% Listing Fee</div>
+        <h2>Join the Fury Network</h2>
+        <p>We handle the clients and management. You focus on the craft. <br> 
+        Standard Management Fee: 10% - 20% per contract.</p>
+        <a href="mailto:recruitment@enforcedfury.com" class="btn">Submit Portfolio</a>
+    </div>
+</div>
+
+<footer style="text-align:center; padding: 2rem; opacity: 0.5;">
+    &copy; 2025 Enforced Fury Game Studios. All Rates Calculated at $1.80/GB Standard.
+</footer>
+
+</body>
+</html>
