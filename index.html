@@ -42,7 +42,7 @@
             border: 3px solid var(--fury-red);
             margin-bottom: 20px;
             box-shadow: 0 0 30px rgba(220, 20, 60, 0.5);
-            background-color: transparent; /* Made transparent for your uploaded logo */
+            background-color: transparent;
             object-fit: contain;
         }
 
@@ -57,6 +57,14 @@
 
         .container { max-width: 1200px; margin: auto; padding: 4rem 2rem; }
         
+        .section-title {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            letter-spacing: 2px;
+        }
+
         .premium-section {
             background: rgba(220, 20, 60, 0.05);
             padding: 3rem;
@@ -68,137 +76,3 @@
 
         .premium-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 25px;
-        }
-
-        .premium-card {
-            background: #111;
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            color: #444;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            border: 1px solid #222;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 10px;
-            border-top: 3px solid var(--fury-purple);
-            transition: 0.3s;
-        }
-
-        .card:hover { border-top-color: var(--fury-red); transform: translateY(-5px); }
-        .card h3 { color: var(--fury-red); margin-top: 0; text-transform: uppercase; }
-
-        .business-model {
-            background: rgba(75, 0, 130, 0.1);
-            padding: 3rem;
-            border-radius: 15px;
-            margin: 4rem 0;
-            border: 1px solid #333;
-        }
-
-        .cta-box {
-            background: linear-gradient(45deg, var(--fury-purple), #1a0033);
-            padding: 4rem 2rem;
-            border-radius: 15px;
-            text-align: center;
-            margin-top: 4rem;
-        }
-
-        .btn {
-            background: var(--fury-red);
-            color: white;
-            padding: 18px 35px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px;
-            transition: 0.3s;
-            text-transform: uppercase;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover { background: #ff1e4d; box-shadow: 0 0 20px rgba(255, 30, 77, 0.4); }
-
-        footer { text-align:center; padding: 5rem 2rem; opacity: 0.5; font-size: 0.8rem; }
-    </style>
-</head>
-<body>
-
-<header>
-    <img src="logo.png" alt="Enforced Fury Logo" class="studio-logo">
-    <div class="logo-area">
-        <h1>Enforced <span>Fury</span></h1>
-        <p>Elite Game Development Outsourcing & Talent Management</p>
-    </div>
-    <div style="margin-top: 20px;">
-        <a href="mailto:enforcedfury@gmail.com?subject=Partner Application" class="btn">Join the Network</a>
-    </div>
-</header>
-
-<div class="container">
-    <div class="premium-section">
-        <h2 style="margin-top:0; text-transform: uppercase;">Enforced Elite <span style="color:var(--fury-red);">Featured Partners</span></h2>
-        <p>Phase 2 Premium Placement. High-visibility slots for verified specialists.</p>
-        <div class="premium-grid">
-            <div class="premium-card">Elite Slot 01: Coming Soon</div>
-            <div class="premium-card">Elite Slot 02: Coming Soon</div>
-            <div class="premium-card">Elite Slot 03: Coming Soon</div>
-        </div>
-    </div>
-
-    <h2 style="text-align:center; font-size: 2rem; margin-bottom: 3rem; text-transform: uppercase;">Our <span style="color:var(--fury-red);">Specializations</span></h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Programmers</h3>
-            <p>Full-stack engine experts specializing in C++, C#, and multiplayer scalability.</p>
-        </div>
-        <div class="card">
-            <h3>Technical Scripters</h3>
-            <p>Advanced AI behaviors, logic implementation, and core gameplay mechanics.</p>
-        </div>
-        <div class="card">
-            <h3>Pixel Art & 2D</h3>
-            <p>Bespoke character sprites, environment tilesets, and game-ready UI assets.</p>
-        </div>
-        <div class="card">
-            <h3>NFT & Web3</h3>
-            <p>Layered asset generation for digital collections and secure blockchain integration.</p>
-        </div>
-        <div class="card">
-            <h3>Game Design</h3>
-            <p>Project documentation, narrative flow, and economy balancing.</p>
-        </div>
-        <div class="card">
-            <h3>Web & Ecosystem</h3>
-            <p>Custom player dashboards, project landing pages, and secure marketplaces.</p>
-        </div>
-    </div>
-
-    <div class="business-model">
-        <h2 style="text-transform: uppercase; text-align: center;">Secure <span style="color:var(--fury-red);">Project Escrow</span></h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">We act as the financial intermediary to protect both clients and creators. Funds are held securely and released only upon milestone approval.</p>
-        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;">
-            <div style="padding: 10px;">
-                <h4 style="color: var(--fury-red); margin-bottom: 5px;">FLAT 10% FEE</h4>
-                <p style="font-size: 0.9rem;">Simple, transparent management.</p>
-            </div>
-            <div style="padding: 10px;">
-                <h4 style="color: var(--fury-red); margin
